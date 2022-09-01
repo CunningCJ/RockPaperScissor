@@ -2,18 +2,6 @@ let playerScore = 0;
 let computerScore = 0;
 let moves = 0;
 
-
-/*const getComputerChoice = Math.random();
-if (Math.random() <= 0.33){
-    computerSelection = "rock";
-} else if (Math.random() >= 0.66)
-    {
-    computerSelection = "paper";
-} else {
-    computerSelection = "scissor";
-}
-*/
-
 function getComputerChoice(){ Math.random();
 if (Math.random() <= 0.33){
     computerSelection = "rock";
@@ -73,36 +61,11 @@ else if (playerSelection === "scissor" && computerSelection === "paper"){
     return ;
 }} 
 
-// if (playerScore || computerScore === 3) {
-//     console.log("Game Over=> User("+playerScore+") vs Computer("+computerScore+")");
-//     alert("Game Over - User("+playerScore+") vs Computer("+computerScore+")");}
-
 playRound(playerSelection, computerSelection);
 console.log(result);
 console.log("your score = " + playerScore);
 console.log("Computer's score = " + computerScore);
 console.log(moves);
-/*
-var i = 0;
-const play = () => {
-    let playerSelection = prompt("Rock, Paper or Scissor").toLowerCase();
-    getComputerChoice();
-    console.log(computerSelection);
-    playRound(playerSelection, computerSelection);
-    console.log(result);
-    console.log("your score = " + playerScore);
-    console.log("Computer's score = " + computerScore);
-    console.log(moves);
-    i++;
-    if (i !== 5) {
-        play();
-    } else {
-        alert("Game Over=> User("+playerScore+") vs Computer("+computerScore+")");
-    }
-}
-
-play();
-*/
 function game(playerSelection, computerSelection){
     for (let i = 0; i < 5; i++) {
         let playerSelection = prompt("Rock, Paper or Scissor").toLowerCase();
@@ -125,13 +88,24 @@ function game(playerSelection, computerSelection){
 
 game(playerSelection, computerSelection);
 
-// for (let i = 0; i < 5; i++) {
-//     let playerSelection = prompt("Rock, Paper or Scissor").toLowerCase();
-//     getComputerChoice();
-//     console.log(computerSelection);
-//     playRound(playerSelection, computerSelection);
-//     console.log(result);
-//     console.log("your score = " + playerScore);
-//     console.log("Computer's score = " + computerScore);
-//     console.log(moves);
-// }
+/*
+var i = 0;
+const play = () => {
+    let playerSelection = prompt("Rock, Paper or Scissor").toLowerCase();
+    getComputerChoice();
+    console.log(computerSelection);
+    playRound(playerSelection, computerSelection);
+    console.log(result);
+    console.log("your score = " + playerScore);
+    console.log("Computer's score = " + computerScore);
+    console.log(moves);
+    i++;
+    if (i !== 5) {
+        play();
+    } else {
+        alert("Game Over=> User("+playerScore+") vs Computer("+computerScore+")");
+    }
+}
+
+play();
+*/
