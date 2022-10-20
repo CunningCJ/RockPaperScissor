@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(29, 28, 28);
+}
+.header, .footer {
+    text-align: center;
+    color: #95aac7;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.mainBut, .pcBut {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+button {
+    font-size: 20px;
+    /* padding: 10px 3px; */
+    margin: 10px;
+}
+/* .playerScore, .playerHeader, .mid, .pcChoice, .pcCount{ */
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #95aac7;
+}
+
+.playerSection, .pcSection {
+    background-color: #060329;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
